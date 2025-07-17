@@ -79,7 +79,7 @@ export const PeoplePage: React.FC = () => {
     } else if (sortBy === 'born') {
       filtered = filtered.sort((a, b) => a.born - b.born);
     } else if (sortBy === 'died') {
-      filtered.sort((a, b) => a.died - b.died);
+      filtered = filtered.sort((a, b) => a.died - b.died);
     }
 
     if (currentOrder === 'desc') {
